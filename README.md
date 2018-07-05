@@ -29,14 +29,18 @@ You see so many customers throughout the day, but want to know which customers a
 * In terminal, run `rake db:migrate`
 
 ##### Deliverables
-* Create the associations between the models, then run `rake db:seed`, check that Brews have been made in the rails console
-* As the user, when I go to the brews index page, it should display all of the brews as links to their show page.
-* As the user, the brew show page should have the brews name, origin, notes, and strength
-* As the user, the customer show page should display their name and list all of the brews they've purchased
-* As the user, I should be able to create a new purchase (with a collection_select for Brew.all) and a field for a customer's name (how would I be able to take in a new Customer if I wasn't already found?)
+Create the associations between the models, then run `rake db:seed`, check that Brews have been made in the rails console
+
+As the user, when I go to the brews index page, it should display all of the brews as links to their show page.
+
+As the user, the brew show page should have the brews name, origin, notes, and strength
+
+As the user, the customer show page should display their name and list all of the brews they've purchased
+
+As the user, I should be able to create a new purchase (with a collection_select for Brew.all) and a field for a customer's name (how would I be able to take in a new Customer if I wasn't already found?)
 
 #### Bonus
-* Create a validation so a Customer's name must be unique
-* Create a new page for creating a brew and give it a form for all the fields necessary for a brew
-* Create validations so the fields cannot be empty
-* Create validations so that the strength of a brew must be between `1` to `5`
+Create a validation so a Customer's name must be unique
+Create a new page for creating a brew and give it a form for all the fields necessary for a brew
+Create validations so the fields cannot be empty
+Create validations so that the strength of a brew must be between `1` to `5`

@@ -1,0 +1,11 @@
+<h1>Buy a Brew, BB!</h1>
+
+<%= form_for @purchase do |f| %>
+  <%= f.label :brew_id %>
+  <%= f.collection_select :brew_id, Brew.all, :id, :blend_name %>
+  <br>
+  <%= f.label :customer_name %>
+  <%= f.text_field :customer_name %>
+  <br>
+  <%= f.submit %>
+<% end %>

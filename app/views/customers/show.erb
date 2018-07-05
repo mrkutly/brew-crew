@@ -1,0 +1,11 @@
+<h1><%= @customer.name %>'s Brews</h1>
+
+<% if @brews.empty? %>
+  <h3><%= @customer.name %> doesn't have any brews!!!</h3>
+<% else %>
+<ul>
+  <% @brews.each do |brew| %>
+    <li><%= link_to brew.blend_name, brew_path(brew) %></li>
+  <% end %>  
+</ul>
+<% end %>
